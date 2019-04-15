@@ -29,7 +29,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\labauthors{Сарафанов Ф.Г., Платонова М.В.}
+\def\labauthors{Есюнин Д.В., Есюнин М.В.}
 \def\labgroup{430}
 % \def\department{Кафедра электроники и квантовой физики}
 \def\labnumber{1}
@@ -131,48 +131,299 @@
 
 \renewcommand{\vec}{\mathbf} % for parts
 
+%\begin{document}
+%\begin{titlepage}
+%\begin{center}
+%% \vspace{-3em}
+%{\small\textsc{Нижегородский государственный университет имени Н.\,И. Лобачевского}}
+%\vskip 2pt \hrule \vskip 3pt
+%{\small\textsc{Радиофизический факультет}}
+%
+%\vfill
+%
+%
+%{{\large Отчет по лабораторной работе №\labnumber}\vskip 12pt {\LARGE \bfseries Движение носителей заряда\\[0.2em]  в электрических и магнитных полях}\vskip 12pt {\Huge \bfseries Эффект Холла}}
+%
+%	
+%\vspace{2cm}
+%{\large Работу выполнили студенты \\[-0.25em] 430 группы радиофизического факультата \\[0.5em] {\Large \bfseries \labauthors}}
+%
+%% \vspace{0.5cm}
+%% {e-mail: sfg180@yandex.ru}
+%
+%% \vspace{2cm}
+%
+%\end{center}
+%
+%\vfill
+%	
+%% \begin{flushright}
+%% 	{Выполнили студенты 430 группы\\ \labauthor}%\vskip 12pt Принял:\\ Менсов С.\,Н.}
+%% \end{flushright}
+%	
+%% \vfill
+%	
+%\begin{center}
+%	{Нижний Новгород, 2 апреля -- \today}
+%\end{center}
+%
+%\end{titlepage}
 \begin{document}
-\begin{titlepage}
-\begin{center}
-% \vspace{-3em}
-{\small\textsc{Нижегородский государственный университет имени Н.\,И. Лобачевского}}
-\vskip 2pt \hrule \vskip 3pt
-{\small\textsc{Радиофизический факультет}}
+	\begin{titlepage}
+		%\begin{center}
+		%
+		%{\textsc{Нижегородский государственный университет имени Н.\,И. Лобачевского}}
+		%\vskip 2pt \hrule \vskip 3pt
+		%{\textsc{Радиофизический факультет}}
+		%
+		%\vfill
+		%
+		%
+		%{{\LARGE Отчет по лабораторной работе №\labnumber}\vskip 12pt {\Huge \bfseries \labtheme}}
+		%
+		%	
+		%\vspace{2cm}
+		%{\large Работу выполнили студенты \\[-0.25em] 430 группы радиофизического факультата \\[0.5em] {\Large \bfseries \labauthor}}
+		%
+		%% \vspace{0.5cm}
+		%% {e-mail: sfg180@yandex.ru}
+		%
+		%% \vspace{2cm}
+		%
+		%\end{center}
+		%
+		%\vfill
+		%	
+		%% \begin{flushright}
+		%% 	{Выполнили студенты 430 группы\\ \labauthor}%\vskip 12pt Принял:\\ Менсов С.\,Н.}
+		%% \end{flushright}
+		%	
+		%% \vfill
+		%	
+		%\begin{center}
+		%	{Нижний Новгород, 6 марта -- \today}
+		%\end{center}
+		\begin{center}
+			
+			
+			\textsc{Нижегородский государственный университет имени Н.\,И. Лобачевского}
+			\vskip 4pt \hrule \vskip 8pt
+			\textsc{Радиофизический факультет}
+			
+			\vfill
+			
+			{\Large\labtheme}
+			
+		\end{center}
+		
+		\vfill
+		
+		\begin{flushright}
+			{Работу выполнили студенты\\ \labauthors\\ 430 группы}
+		\end{flushright}
+		
+		\vfill
+		
+		\begin{center}
+			Нижний Новгород, \the\year
+		\end{center}
+	\end{titlepage}
+	\tableofcontents
+	\newpage 
+%\tableofcontents
+%\newpage
+%\input{text/pre}
+%
+%\renewcommand{\phi}{\varphi}
+%
+%
+%
+%
+%
+%\documentclass[a4paper,12pt]{article}
+%
+%\usepackage{cmap}
+%\usepackage[T2A]{fontenc}
+%\usepackage[utf8x]{inputenc}
+%\usepackage[english, russian]{babel}
+%
+%\usepackage{misccorr} % в заголовках появляется точка, но при ссылке на них ее нет
+%\usepackage{amssymb,amsfonts,amsmath,amsthm}  
+%\usepackage{indentfirst}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage[unicode,hidelinks]{hyperref}
+%\hypersetup{%
+%	pdfborder = {0 0 0}
+%}
+%\usepackage{makecell,multirow} 
+%\usepackage{ulem}
+%\usepackage{graphicx,wrapfig}
+%\graphicspath{{img/}}
+%\usepackage{geometry}
+%\geometry{left=2cm,right=2cm,top=3cm,bottom=3cm,bindingoffset=0cm,headheight=15pt}
+%\usepackage{fancyhdr} 
+%% \linespread{1.2} 
+%\frenchspacing 
+%\renewcommand{\labelenumii}{\theenumii)} 
+%% \usepackage{caption}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\def\labauthor{Есюнин М.В., Есюнин Д.В.}
+%\def\labauthors{\labauthor}
+%\def\labnumber{1}
+%\def\labtheme{Частотный модем}
+%\def\sciadviser{Земнюков Н.Е.}
+%\def\shortlabname{Частотный модем}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%применим колонтитул к стилю страницы
+%\pagestyle{fancy} 
+%%очистим "шапку" страницы
+%\fancyhead{} 
+%%слева сверху на четных и справа на нечетных
+%\fancyhead[L]{\labauthors} 
+%%справа сверху на четных и слева на нечетных
+%\fancyhead[R]{\shortlabname} 
+%%очистим "подвал" страницы
+%\fancyfoot{} 
+%% номер страницы в нижнем колинтуле в центре
+%\fancyfoot[C]{\thepage} 
+%\renewcommand{\phi}{\varphi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\usepackage{float}
+%\usepackage[mode=buildnew]{standalone}
+%\usepackage{tikz} 
+%% \usepackage{subcaption}
+%\usepackage{tikz,csvsimple}
+%\usetikzlibrary{scopes}
+%\usetikzlibrary{%
+%	decorations.pathreplacing,%
+%	decorations.pathmorphing,%
+%	patterns,%
+%	calc,%
+%	scopes,%
+%	arrows,%
+%	% arrows.spaced,%
+%}
+%\makeatletter
+%\newif\if@gather@prefix 
+%\preto\place@tag@gather{% 
+%	\if@gather@prefix\iftagsleft@ 
+%	\kern-\gdisplaywidth@ 
+%	\rlap{\gather@prefix}% 
+%	\kern\gdisplaywidth@ 
+%	\fi\fi 
+%} 
+%\appto\place@tag@gather{% 
+%	\if@gather@prefix\iftagsleft@\else 
+%	\kern-\displaywidth 
+%	\rlap{\gather@prefix}% 
+%	\kern\displaywidth 
+%	\fi\fi 
+%	\global\@gather@prefixfalse 
+%} 
+%\preto\place@tag{% 
+%	\if@gather@prefix\iftagsleft@ 
+%	\kern-\gdisplaywidth@ 
+%	\rlap{\gather@prefix}% 
+%	\kern\displaywidth@ 
+%	\fi\fi 
+%} 
+%\appto\place@tag{% 
+%	\if@gather@prefix\iftagsleft@\else 
+%	\kern-\displaywidth 
+%	\rlap{\gather@prefix}% 
+%	\kern\displaywidth 
+%	\fi\fi 
+%	\global\@gather@prefixfalse 
+%} 
+%\newcommand*{\beforetext}[1]{% 
+%	\ifmeasuring@\else
+%	\gdef\gather@prefix{#1}% 
+%	\global\@gather@prefixtrue 
+%	\fi
+%} 
+%\makeatother
+%
+%\usepackage{booktabs}
+%\usepackage{pgfplots, pgfplotstable}
+%
+%\usepackage[outline]{contour}
+%\usepackage{tocloft}
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % for parts
+%% \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
+%\usepackage{pgfplots,pgfplotstable,booktabs,colortbl}
+%\pgfplotsset{compat=newest}
+%\usepackage{physics}
+%\usepackage{mathtools}
+%\mathtoolsset{showonlyrefs=true}
+%\newcommand\Smat{\hat { \mathbf { S } }}
 
-\vfill
-
-
-{{\large Отчет по лабораторной работе №\labnumber}\vskip 12pt {\LARGE \bfseries Движение носителей заряда\\[0.2em]  в электрических и магнитных полях}\vskip 12pt {\Huge \bfseries Эффект Холла}}
-
+%\begin{document}
+%	\begin{titlepage}
+%		%\begin{center}
+%		%
+%		%{\textsc{Нижегородский государственный университет имени Н.\,И. Лобачевского}}
+%		%\vskip 2pt \hrule \vskip 3pt
+%		%{\textsc{Радиофизический факультет}}
+%		%
+%		%\vfill
+%		%
+%		%
+%		%{{\LARGE Отчет по лабораторной работе №\labnumber}\vskip 12pt {\Huge \bfseries \labtheme}}
+%		%
+%		%	
+%		%\vspace{2cm}
+%		%{\large Работу выполнили студенты \\[-0.25em] 430 группы радиофизического факультата \\[0.5em] {\Large \bfseries \labauthor}}
+%		%
+%		%% \vspace{0.5cm}
+%		%% {e-mail: sfg180@yandex.ru}
+%		%
+%		%% \vspace{2cm}
+%		%
+%		%\end{center}
+%		%
+%		%\vfill
+%		%	
+%		%% \begin{flushright}
+%		%% 	{Выполнили студенты 430 группы\\ \labauthor}%\vskip 12pt Принял:\\ Менсов С.\,Н.}
+%		%% \end{flushright}
+%		%	
+%		%% \vfill
+%		%	
+%		%\begin{center}
+%		%	{Нижний Новгород, 6 марта -- \today}
+%		%\end{center}
+%		\begin{center}
+%			
+%			
+%			\textsc{Нижегородский государственный университет имени Н.\,И. Лобачевского}
+%			\vskip 4pt \hrule \vskip 8pt
+%			\textsc{Радиофизический факультет}
+%			
+%			\vfill
+%			
+%			{\Huge\labtheme}
+%			
+%		\end{center}
+%		
+%		\vfill
+%		
+%		\begin{flushright}
+%			{Работу выполнили студенты\\ \labauthors\\ 430 группы\\ \vskip 14pt преподаватель:\\ \sciadviser}
+%		\end{flushright}
+%		
+%		\vfill
+%		
+%		\begin{center}
+%			Нижний Новгород, \the\year
+%		\end{center}
+%	\end{titlepage}
+%	\tableofcontents
+%	\newpage 
 	
-\vspace{2cm}
-{\large Работу выполнили студенты \\[-0.25em] 430 группы радиофизического факультата \\[0.5em] {\Large \bfseries \labauthors}}
-
-% \vspace{0.5cm}
-% {e-mail: sfg180@yandex.ru}
-
-% \vspace{2cm}
-
-\end{center}
-
-\vfill
-	
-% \begin{flushright}
-% 	{Выполнили студенты 430 группы\\ \labauthor}%\vskip 12pt Принял:\\ Менсов С.\,Н.}
-% \end{flushright}
-	
-% \vfill
-	
-\begin{center}
-	{Нижний Новгород, 2 апреля -- \today}
-\end{center}
-
-\end{titlepage}
-\tableofcontents
-\newpage
-
-
-
 \section*{Введение}
 \addcontentsline{toc}{section}{Введение}
 	Особенности движения носителей заряда в электрических и магнитных
@@ -796,7 +1047,9 @@ $$\vec{F} = -e [\vec{v}, \vec{B}].$$
 Для измерения ЭДС Холла используется мультиметр в режиме измерения постоянного напряжения на пределе 200 мВ. Один из выводов мультиметра подсоединяется к контакту 3 образца, другой – к резистору R2 «Балансировка». Необходимость балансировки обусловлена тем, что при подсоединении измерительных контактов к образцу невозможно их расположить абсолютно точно друг напротив друга, в результате чего между этими выводами появится паразитная разность потенциалов, обусловленная током образца, которая будет давать систематическую ошибку измерения ЭДС Холла. Чтобы её уменьшить, с одной из сторон делаются два контакта (4 и 5), к которым подсоединяются крайние выводы переменного резистора R2. Изменяя положение движка резистора R2, можно найти точку с потенциалом, равным потенциалу контакта 3. При этом показания мультиметра в идеале должны быть равны нулю, а в реальной жизни будут минимальны.
 Для создания магнитного поля используется электромагнит, ток через который обеспечивается источником питания GPS-3030D, работающим в режиме стабилизации тока. Диод, включённый во встречном направлении параллельно обмотке электромагнита, предназначен для уменьшения ЭДС самоиндукции, которая может возникнуть при резких скачках тока электромагнита (например, при разрыве цепи или выключении источника питания). Величина этой ЭДС в зависимости от скорости изменения тока может на несколько порядков превышать напряжение на обмотке в стационарном режиме, что представляет опасность для оператора и оборудования.
 
-\section{Практическая часть}
+\newpage
+\section{Эксперимент}
+
 %Внимание!
 %Большинство расчетов в данной лабе выполнены pythontex'ом, потому если копируете куски кода, то будьте внимательны к инородному синтаксису :) 
 \subsection{Измерение ВАХ образца и паразитного напряжения на контактах}
@@ -875,7 +1128,7 @@ $$\vec{F} = -e [\vec{v}, \vec{B}].$$
 
 Сила, действующая на заряд в магнитном поле, вызывает разделение зарядов по боковым граням полупроводника, при этом на гранях возникает разность потенциалов (для дырочного и электронного случая на рис. \ref{fig:hall} показано разделение зарядов)
 
-В нашем случае милливольтметр снимал отрицательное напряжение при данных условиях, а значит, согласно рисунку, носители заряда -- электроны.
+В нашем случае милливольтметр снимал положительное напряжение при данных условиях, а значит, согласно рисунку, носители заряда -- дырки.
 
 \subsection{Расчёт постоянной Холла и подвижности основных носителей}
 Согласно формуле \eqref{eq:2.5}, в линейном приближении можно, зафиксировав одну из переменных (поле магнита или ток), и снимая зависимость от другой переменной, найти постоянную Холла.
@@ -963,17 +1216,7 @@ R_{1000}= (9.0\pm0.4)\cdot10^{-4} \Rdim
 \end{equation}
 
 
-\begin{thebibliography}{}
-	\bibitem{lit0} Сарафанов Ф.Г. Блог <<\href{http://fedorsarafanov.github.io}{Physics \& other}>>. Н.Новгород: РФФ ННГУ, 2019.
 
-	\bibitem{lab1} Сарафанов Ф.\,Г., Понур К.\,А., Сидоров Д.\,А. \href{https://github.com/FedorSarafanov/HallEffect}{Отчет по работе <<эффект Холла>>} (\href{https://github.com/FedorSarafanov/HallEffect}{https://github.com/FedorSarafanov/HallEffect})
-
-	\bibitem{lab2} Понур К.\,А., Карусевич А.\,А. \href{https://github.com/FedorSarafanov/HallEffect}{Отчет по работе <<Движение носителей заряда в электрических и магнитных полях>>} (\href{https://github.com/KirillPonur/quant-hall-effect}{https://github.com/KirillPonur/quant-hall-effect})
-
-	\bibitem{met} Битюрин Ю.\,А. и др. Движение носителей заряда в электрических и магнитных полях. Эффект Холла: описание к лабораторной работе. -- Н.Новгород: ННГУ, 2004 -- 32 с.
-
-	\bibitem{lit3} Битюрин Ю.А. и др. Измерение ширины запрещенной зоны. Описание к лабораторной работе. Н.Новгород: ННГУ, 2004
-\end{thebibliography}
 
 
 \end{document}
